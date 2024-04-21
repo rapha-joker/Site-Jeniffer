@@ -1,0 +1,81 @@
+/* Definindo o estilo básico da página */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Definindo o estilo do cabeçalho */
+  
+  header {
+    background: linear-gradient(to left, #c81498, #f9f9f8);
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+  }
+  
+  /* Adicionando regras de mídia para ajustar o cabeçalho em diferentes tamanhos de tela */
+  
+  @media only screen and (max-width: 768px) {
+    header {
+      height: 100px;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  /* Definindo o estilo do conteúdo principal */
+  
+  main {
+    background-color: #f1b1e0;
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Adicionando regras de mídia para ajustar o conteúdo principal em diferentes tamanhos de tela */
+  
+  @media only screen and (max-width: 768px) {
+    main {
+      min-height: calc(100vh - 100px);
+    }
+  }
+  
+  /* Definindo o estilo do espaço */
+  
+  .space {
+    text-align: justify;
+    background-color: #f1b1e0;
+    color: #f1b1e0;
+  }
+  
+  /* Definindo o estilo do logo */
+  
+  .logo {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 400px;
+    max-height: 400px;
+    border: 4px groove #001133;
+    resize: both;
+    border-radius: 8px;
+  }
+  
+  /* Adicionando regras de mídia para ajustar o logo em diferentes tamanhos de tela */
+  
+  @media only screen and (max-width: 768px) {
+    .logo {
+      min-width: 250px;
+      max-height: 250px;
+    }
+  }
+  
+  /* Definindo o estilo do body */
+  
+  body {
+    border: 6px double #0e0e01;
+  }

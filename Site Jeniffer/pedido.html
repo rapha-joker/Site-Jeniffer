@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Raphael Amaral de Carvalho">
+	<title>Isabebi Bonecos em Feltro</title>
+	<link rel="stylesheet" type="text/css" href="css/folhadeestilo.css">
+</head>
+
+<body background="imagem\delivery.jpg">
+	<div class="container-principal">
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="imagem/logo2.png" alt="logo site">
+				</a>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portifolio.html">Portifólio</a></li>
+					<li><a href="#topo">Faça seu pedido</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<div class='img-titulo'><img src="imagem/pedir.png" alt="imagem de pedido"></div>
+
+	<section>
+		<fieldset class="fieldset">
+            <h2 class="title">FAÇA SEU PEDIDO AQUI!</h2>
+            <form action="https://formsubmit.co/isabebi.teste@gmail.com" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Insira seu nome">
+            <br>
+            <label for="contato">Telefone:</label>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ex.: (99) 99999-9999">
+            <br>
+            <label for="contact">E-mail:</label>
+            <input type="email" name="contact" placeholder="Insira seu e-mail">
+            <br>
+            <label for="endereco">Endereço:</label>
+            <input name="endereco" placeholder="Insira seu endereço" required></textarea>
+            <br>
+            <label for="pedido">Pedido:</label>
+            <textarea name="pedido" required></textarea>
+            <br>
+            <label for="data">Escolha a data que deseja a encomenda:</label>
+            <input type="date" name="data" placeholder="selecione para qual data deseja a sua encomenda:" required>
+            <br>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+        </fieldset>
+	</section>
+
+</body>
+</html>
